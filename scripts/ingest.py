@@ -1,8 +1,8 @@
 import os
 from sentence_transformers import SentenceTransformer
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.embeddings.base import Embeddings
 import numpy as np
 

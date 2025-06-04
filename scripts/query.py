@@ -1,6 +1,6 @@
 import os
 from sentence_transformers import SentenceTransformer
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 # from langchain.document_loaders import Document
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 import torch
@@ -22,7 +22,8 @@ def main():
             return self.model.encode(text)
 
     sbert = SBERTEmbeddings(embedder)
-    db = FAISS.load_local("faiss_index", sbert)
+
+    db = FAISS.load_local("faiss_index", sbert, allow_dangerous_deserialization=True)
 
     # 3. Load a local seq2seq LLM (flan-t5-small) for generation
     model_name = "google/flan-t5-small"
