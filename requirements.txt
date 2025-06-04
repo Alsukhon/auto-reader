@@ -1,0 +1,6 @@
+sentence-transformers       # for local embeddings
+transformers                # for loading/flan-t5-small text2text LLM
+torch                       # backend for transformers & sentence-transformers
+faiss-cpu                   # local vector store
+PyPDF2                      # lightweight PDF parsing
+langchain                   # for LLM and vector store integration
