@@ -6,6 +6,6 @@ This repo demonstrates a Retrieval-Augmented Generation (RAG) workflow over a sa
 
 1. **Clone & Install Dependencies**
    ```bash
-   git clone https://github.com/YourUsername/rag_pdf_qa.git
-   cd rag_pdf_qa
+   git clone https://github.com/Alsukhon/auto-reader.git
+   cd auto-reader
    pip install -r requirements.txt
